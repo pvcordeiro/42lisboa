@@ -6,11 +6,11 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:09:59 by paude-so          #+#    #+#             */
-/*   Updated: 2024/09/28 16:34:52 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/09/29 13:51:38 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 int	ft_char_is_alphanumeric(char c)
 {
@@ -57,7 +57,7 @@ char	*ft_strcapitalize(char *str)
 	}
 	return (str);
 }
-
+/*
 int	main(int argc, char *argv[])
 {
 	if (argc < 2)
@@ -75,4 +75,4 @@ int	main(int argc, char *argv[])
 	}
 	printf("\n");
 	return (0);
-}
+}*/
