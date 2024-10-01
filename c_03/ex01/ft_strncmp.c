@@ -6,9 +6,14 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 22:32:19 by paude-so          #+#    #+#             */
-/*   Updated: 2024/09/30 14:44:02 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/01 12:55:00 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+It works the same as ft_strcmp except that we can define a limit number, it
+compares the strings until it reaches the n position in the strings
+*/
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {

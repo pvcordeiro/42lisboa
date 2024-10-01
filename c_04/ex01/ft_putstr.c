@@ -1,51 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 18:09:40 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/01 18:16:34 by paude-so         ###   ########.fr       */
+/*   Created: 2024/10/01 14:35:41 by paude-so          #+#    #+#             */
+/*   Updated: 2024/10/01 14:51:26 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_putstr(char *str)
 {
-	write(1, &c, 1);
-}
+	int	i;
 
-void	ft_print_comb2(void)
-{
-	int	n1;
-	int	n2;
-
-	n1 = 0;
-	while (n1 <= 98)
+	i = 0;
+	while (str[i] != '\0')
 	{
-		n2 = n1 + 1;
-		while (n2 <= 99)
-		{
-			ft_putchar(n1 / 10 + '0');
-			ft_putchar(n1 % 10 + '0');
-			ft_putchar(' ');
-			ft_putchar(n2 / 10 + '0');
-			ft_putchar(n2 % 10 + '0');
-			if (n1 != 98)
-			{
-				ft_putchar(',');
-				ft_putchar(' ');
-			}
-			n2++;
-		}
-		n1++;
+		write(1, &str[i], 1);
+		i++;
 	}
+	write (1, "\n", 1);
 }
 /*
-int	main(void)
+#include <stdio.h>
+int	main(int argc, char *argv[])
 {
-	ft_print_comb2();
+
+	if (argc != 2)
+	{
+		printf("Usage: %s <string>\n", argv[0]);
+		return (1);
+	}
+	ft_putstr(argv[1]);
 	return (0);
 }*/

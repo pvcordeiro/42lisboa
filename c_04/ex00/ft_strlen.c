@@ -1,40 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_combn.c                                   :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 20:23:11 by paude-so          #+#    #+#             */
-/*   Updated: 2024/09/26 21:46:50 by paude-so         ###   ########.fr       */
+/*   Created: 2024/10/01 14:26:31 by paude-so          #+#    #+#             */
+/*   Updated: 2024/10/01 14:35:26 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_combn(int n)
+int	ft_strlen(char *str)
 {
-	char	n1;
-	char	n2;
+	int	i;
 
-	n1 = '0';
-	while (n1 <= '8')
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
+/*
+#include <stdio.h>
+int	main(int argc, char *argv[])
+{
+	int	result;
+
+	if (argc != 2)
 	{
-		n2 = n1 + 1;
-		while (n2 <= '9')
-		{
-			write(1, &n1, 1);
-			write(1, &n2, 1);
-			if (n1 != '8')
-				write(1, ", ", 2);
-			n2++;
-		}
-		n1++;
+		printf("Usage: %s <string>\n", argv[0]);
+		return (1);
 	}
-}
-
-int	main(void)
-{
-	ft_print_combn();
+	result = ft_strlen(argv[1]);
+	printf("%s length is %d\n", argv[1], result);
 	return (0);
-}
+}*/

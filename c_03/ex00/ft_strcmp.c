@@ -6,9 +6,15 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 20:26:44 by paude-so          #+#    #+#             */
-/*   Updated: 2024/09/30 14:42:30 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/01 12:51:37 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+Compares two strings until a different char is found or reaches the end of one
+of the strings, if it finds different chars, it returns the ascii value
+difference between the two.
+*/
 
 int	ft_strcmp(char *s1, char *s2)
 {
