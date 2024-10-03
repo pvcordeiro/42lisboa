@@ -1,43 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/02 15:48:02 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/03 11:11:00 by paude-so         ###   ########.fr       */
+/*   Created: 2024/10/03 11:41:48 by paude-so          #+#    #+#             */
+/*   Updated: 2024/10/03 12:31:55 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb)
+int	ft_sqrt(int nb)
 {
-	if (nb < 0)
-		return (0);
-	if (nb == 0 || nb == 1)
-		return (1);
-	return (nb * ft_recursive_factorial(nb - 1));
+	int	i;
+
+	i = 1;
+	while (i * i <= nb)
+	{
+		if (i * i == nb)
+			return (i);
+		i++;
+	}
+	return (0);
 }
 /*
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 int     main(int argc, char *argv[])
 {
-        int     i = 1;
-        int     args;
-        int     result;
+        int     n;
+        int     res;
 
-        if (argc < 2)
+        if (argc != 2)
         {
                 printf("Usage: %s <n>\n", argv[0]);
                 return (1);
         }
-        while (i < argc)
-        {       
-                args = atoi(argv[i]);
-                result = ft_recursive_factorial(args);
-                printf("The factorial of %d is %d.\n", args, result);
-                i++;
-        }
+        n = atoi(argv[1]);
+        res = ft_sqrt(n);
+        printf("The squareroot of %d is %d\n", n, res);
         return (0);
 }*/
