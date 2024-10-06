@@ -6,8 +6,13 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 21:24:19 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/04 21:24:27 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/05 11:21:54 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
+# define ABS(Value) ((Value < 0) * -Value) + ((Value >= 0) * Value)
+
+#endif

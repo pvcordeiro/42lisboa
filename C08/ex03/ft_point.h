@@ -1,38 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_params.c                                    :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/02 19:12:42 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/06 21:08:58 by paude-so         ###   ########.fr       */
+/*   Created: 2024/10/05 09:44:44 by paude-so          #+#    #+#             */
+/*   Updated: 2024/10/05 13:34:28 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+typedef struct s_point
 {
-	while (*str)
-	{
-		write(1, str++, 1);
-	}
-}
+	int	x;
+	int	y;
+}	t_point;
 
-int	main(int argc, char *argv[])
-{
-	int	i;
-
-	i = argc - 1;
-	if (argc)
-	{
-		while (i > 0)
-		{
-			ft_putstr(argv[i]);
-			ft_putstr("\n");
-			i--;
-		}
-	}
-	return (0);
-}
+#endif

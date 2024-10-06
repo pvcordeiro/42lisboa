@@ -6,12 +6,12 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:21:07 by paude-so          #+#    #+#             */
-/*   Updated: 2024/09/25 19:37:02 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/06 16:05:36 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-*/
+#include <stdio.h>
+
 char	*ft_strupcase(char *str)
 {
 	int	i;
@@ -25,7 +25,7 @@ char	*ft_strupcase(char *str)
 	}
 	return (str);
 }
-/*
+
 int	main(int argc, char *argv[])
 {
 
@@ -38,10 +38,9 @@ int	main(int argc, char *argv[])
 	int i = 1;
 	while (i < argc)
 	{
-		char *args = argv[i];
-		ft_strupcase(args);
-		printf("%s\n", args);
+		ft_strupcase(argv[i]);
+		printf("%s\n", argv[i]);
 		i++;
 	}
 	return (0);
-}*/
+}
