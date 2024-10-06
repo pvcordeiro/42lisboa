@@ -18,7 +18,7 @@ int	ft_recursive_power(int nb, int power)
 		return (1);
 	return (nb * ft_recursive_power(nb, power - 1));
 }
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 int     main(int argc, char *argv[])
@@ -37,4 +37,4 @@ int     main(int argc, char *argv[])
         res = ft_recursive_power(n, pow);
         printf("%i to the power of %i is %i\n", n, pow, res);
         return (0);
-}
+}*/
