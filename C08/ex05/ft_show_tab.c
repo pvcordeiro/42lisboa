@@ -6,7 +6,7 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:52:37 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/07 16:32:34 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:41:30 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 void	ft_putnbr(int nb)
 {
-	int	print;	
+	int		print;
 	long	n;
 
 	n = nb;
@@ -47,14 +47,18 @@ void	ft_show_tab(struct s_stock_str *par)
 		i++;
 	}
 }
-
+/*
 #include <stdio.h>
+
 int	main(int argc, char *argv[])
 {
-	if (argc != 2)
+	if (argc < 2)
 	{
 		printf("Usage: %s <string>\n", argv[0]);
+		return (1);
 	}
+	printf("\n");
 	ft_show_tab(ft_strs_to_tab(argc - 1, argv + 1));
+	printf("\n");
 	return (0);
-}
+}*/

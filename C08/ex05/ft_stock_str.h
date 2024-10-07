@@ -18,12 +18,12 @@ typedef struct s_stock_str
 	int		size;
 	char	*str;
 	char	*copy;
-}	t_stock_str;
+}			t_stock_str;
 
-void	ft_show_tab(struct s_stock_str *par);
+void		ft_show_tab(struct s_stock_str *par);
 t_stock_str	*ft_strs_to_tab(int ac, char **av);
-int	ft_strlen(char *str);
-char	*pv_strcpy(char *str, int size);
-void	ft_putnbr(int nb);
+int			ft_strlen(char *str);
+char		*pv_strcpy(char *str, int size);
+void		ft_putnbr(int nb);
 
 #endif

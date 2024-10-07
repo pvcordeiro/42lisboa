@@ -6,7 +6,7 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:52:29 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/07 16:33:28 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:42:40 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,17 +75,19 @@ int	main(int argc, char *argv[])
 	t_stock_str	*result;
 	int	i;
 
-	if (argc != 2)
+	if (argc < 2)
 	{
-		printf("Usage: %s <string>\n", argv[0]);
+		printf("Usage: %s <string1> <string2>...\n", argv[0]);
 	}
 	result = ft_strs_to_tab(argc - 1, argv + 1);
+	printf("\n");
 	i = 0;
 	while (i < argc - 1)
 	{
 		printf("String: %s\n", result[i].str);
 		printf("Size: %d\n", result[i].size);
 		printf("Copied: %s\n", result[i].copy);
+		printf("\n");
 		i++;
 	}
 	return (0);
