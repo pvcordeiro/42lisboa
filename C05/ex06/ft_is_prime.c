@@ -6,7 +6,7 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 12:35:01 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/06 15:26:44 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/08 21:20:52 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_is_prime(int nb)
 	}
 	return (1);
 }
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 int     main(int argc, char *argv[])
@@ -42,4 +42,4 @@ int     main(int argc, char *argv[])
         result = ft_is_prime(converted);
         printf("%d", result);
         return (0);
-}
+}*/

@@ -6,7 +6,7 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 12:49:49 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/03 16:51:30 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/08 21:21:08 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,7 @@ int	ft_find_next_prime(int nb)
 	}
 	return (nb);
 }
-
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 int     main(int argc, char *argv[])
@@ -52,4 +51,4 @@ int     main(int argc, char *argv[])
         result = ft_find_next_prime(converted);
         printf("%d", result);
         return (0);
-}
+}*/
