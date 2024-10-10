@@ -6,7 +6,7 @@
 /*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 20:03:37 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/08 21:18:22 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/10 20:29:13 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -23,10 +23,10 @@ int	stringlen(char *str)
 
 int	is_valid_base(char *base)
 {
-	int		len;
 	char	*diff;
 
-	len = 0;
+	if (stringlen(base) <= 1)
+		return (0);
 	while (*base)
 	{
 		if (*base == '+' || *base == '-')
@@ -39,12 +39,8 @@ int	is_valid_base(char *base)
 			diff++;
 		}
 		base++;
-		len++;
 	}
-	if (len < 2)
-		return (0);
-	else
-		return (1);
+	return (1);
 }
 
 void	ft_putnbr_base(int nbr, char *base)
@@ -85,5 +81,6 @@ int	main(int argc, char *argv[])
 	}
 	int	n = atoi(argv[1]);
 	ft_putnbr_base(n, argv[2]);
+	printf(" is %d in base %s\n", n, argv[2]);
 	return (0);
 }*/
