@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paude-so <paude-so@student.42lisboa.c      +#+  +:+       +#+        */
+/*   By: paude-so <paude-so@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 16:32:27 by paude-so          #+#    #+#             */
-/*   Updated: 2024/10/09 13:40:33 by paude-so         ###   ########.fr       */
+/*   Updated: 2024/10/16 14:51:16 by paude-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ char	**ft_split(char *str, char *charset)
 	arr[i] = NULL;
 	return (arr);
 }
-/*
+
 #include <stdio.h>
 int	main(int argc, char *argv[])
 {
@@ -130,4 +130,4 @@ int	main(int argc, char *argv[])
 	}
 	free(result);
 	return (0);
-}*/
+}
